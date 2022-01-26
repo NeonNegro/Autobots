@@ -6,7 +6,7 @@ npm init -y &&
 npm i -D nodemon &&
 npm i express &&
 npm i mongodb &&
-npm i cores &&
+npm i cors &&
 npm i dotenv &&
 touch .gitignore &&
 echo '/node_modules' >> .gitignore &&
