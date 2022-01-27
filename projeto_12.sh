@@ -12,11 +12,15 @@ npm i -D nodemon &&
 npm i express &&
 npm i mongodb &&
 npm i cors &&
+npm i joy &&
 npm i dotenv &&
 touch .gitignore
 touch .env
 touch index.js
 echo '/node_modules' >> .gitignore &&
+echo '/assets' >> .gitignore &&
+echo 'index.html' >> .gitignore &&
+echo 'instructions.sh' >> .gitignore &&
 echo '.env' >> .gitignore &&
 sed -i "s/$SEARCH/$REPLACE/" package.json
 sed -i '/\"main\": \"index.js\",/a\\t\"type\": \"module\",' package.json
