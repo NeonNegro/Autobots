@@ -1,4 +1,6 @@
 #!/bin/bash
+SEARCH='exit 1'
+REPLACE='exit 1",\n\t\t"start": "npx nodemon index.js'
 mkdir projeto_12_API_Batepapo_UOL  &&
 cd projeto_12_API_Batepapo_UOL &&
 git init &&
@@ -13,5 +15,6 @@ echo '/node_modules' >> .gitignore &&
 touch .env &&
 echo '.env' >> .gitignore &&
 touch index.js &&
+sed -i "s/$SEARCH/$REPLACE/" package.json
 code .
 #&& exit 1 não consigo fazer o terminal fechar
