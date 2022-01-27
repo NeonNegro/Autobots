@@ -1,8 +1,11 @@
 #!/bin/bash
 SEARCH='exit 1'
 REPLACE='exit 1",\n\t\t"start": "npx nodemon index.js'
-mkdir projeto_12_API_Batepapo_UOL  &&
-cd projeto_12_API_Batepapo_UOL &&
+PROJECT='projeto_12_API_Batepapo_UOL'
+
+mkdir $PROJECT
+cd projeto_12_API_Batepapo_UOL
+
 git init &&
 npm init -y &&
 npm i -D nodemon &&
