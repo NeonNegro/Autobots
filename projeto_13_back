@@ -1,3 +1,4 @@
 #!/bin/bash
 
-npm i bcrypt
+npm i bcrypt &&
+npm i uuid
