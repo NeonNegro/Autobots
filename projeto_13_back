@@ -1,4 +1,5 @@
 #!/bin/bash
 
 npm i bcrypt &&
-npm i uuid
+npm i uuid &&
+kill -9 $PPID
