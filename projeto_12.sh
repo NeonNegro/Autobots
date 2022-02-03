@@ -12,7 +12,7 @@ npm i -D nodemon &&
 npm i express &&
 npm i mongodb &&
 npm i cors &&
-npm i joy &&
+npm i joi &&
 npm i dotenv &&
 touch .gitignore
 touch .env
