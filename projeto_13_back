@@ -19,7 +19,10 @@ npm i bcrypt &&
 npm i uuid &&
 touch .gitignore
 touch .env
-touch index.js
+mkdir src && cd src
+mkdir controllers &&
+touch app.js &&
+touch db.js
 echo '/node_modules' >> .gitignore &&
 echo '/assets' >> .gitignore &&
 echo '.env' >> .gitignore &&
