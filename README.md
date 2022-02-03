@@ -11,6 +11,6 @@ Collection of shell sripts to start Driven Projects
 - open the terminal in the parent folder
 - run the command 
  ```
- chmod +x projeto_12.sh && ./projeto_12
+ chmod +x projeto_12.sh && ./projeto_12.sh
  ```
 
