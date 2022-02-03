@@ -17,6 +17,7 @@ npm i joi &&
 npm i dotenv &&
 npm i bcrypt &&
 npm i uuid &&
+npm i string-strip-html &&
 touch .gitignore
 touch .env
 mkdir src && cd src
