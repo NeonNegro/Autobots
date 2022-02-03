@@ -1,5 +1,29 @@
 #!/bin/bash
 
+SEARCH='exit 1'
+REPLACE='exit 1",\n\t\t"start": "npx nodemon index.js'
+PROJECT='projeto_13_mywallet_back'
+
+mkdir $PROJECT
+cd $PROJECT
+
+git init &&
+npm init -y &&
+npm i -D nodemon &&
+npm i express &&
+npm i mongodb &&
+npm i cors &&
+npm i joy &&
+npm i dotenv &&
 npm i bcrypt &&
 npm i uuid &&
+touch .gitignore
+touch .env
+touch index.js
+echo '/node_modules' >> .gitignore &&
+echo '/assets' >> .gitignore &&
+echo '.env' >> .gitignore &&
+sed -i "s/$SEARCH/$REPLACE/" package.json
+sed -i '/\"main\": \"index.js\",/a\\t\"type\": \"module\",' package.json
+code .
 kill -9 $PPID
