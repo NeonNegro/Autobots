@@ -28,6 +28,8 @@ echo '/node_modules' >> .gitignore &&
 echo '/assets' >> .gitignore &&
 echo '.env' >> .gitignore &&
 sed -i "s/$SEARCH/$REPLACE/" package.json
+sed -1 "s/index.js/app.js/" package.json
+"src/app.js"
 sed -i '/\"main\": \"index.js\",/a\\t\"type\": \"module\",' package.json
 code .
 kill -9 $PPID
